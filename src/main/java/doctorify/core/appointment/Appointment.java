@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class Appointment {
     String id;
-    Long doctorId;
-    Long patientId;
+    String doctorId;
+    String patientId;
     Date startTime;
     Date endTime;
 
@@ -29,19 +29,19 @@ public class Appointment {
         this.startTime = startTime;
     }
 
-    public Long getPatientId() {
+    public String getPatientId() {
         return patientId;
     }
 
-    public void setPatientId(Long patientId) {
+    public void setPatientId(String patientId) {
         this.patientId = patientId;
     }
 
-    public Long getDoctorId() {
+    public String getDoctorId() {
         return doctorId;
     }
 
-    public void setDoctorId(Long doctorId) {
+    public void setDoctorId(String doctorId) {
         this.doctorId = doctorId;
     }
 }

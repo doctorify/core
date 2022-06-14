@@ -8,7 +8,7 @@ import java.util.Date;
 
 @Document(collection = "doctors")
 public class Doctor extends Person {
-    List<Long> specializationIds;
+    List<String> specializationIds;
     Date practiseStartDate;
     Double consultationFee;
 
@@ -28,11 +28,11 @@ public class Doctor extends Person {
         this.practiseStartDate = practiseStartDate;
     }
 
-    public List<Long> getSpecializationIds() {
+    public List<String> getSpecializationIds() {
         return specializationIds;
     }
 
-    public void setSpecializationIds(List<Long> specializationIds) {
+    public void setSpecializationIds(List<String> specializationIds) {
         this.specializationIds = specializationIds;
     }
 }
