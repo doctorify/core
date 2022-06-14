@@ -6,10 +6,6 @@ public class Patient extends Person {
     Double height;
     Double weight;
 
-    public Patient(String id) {
-        super(id);
-    }
-
     public Double getWeight() {
         return weight;
     }

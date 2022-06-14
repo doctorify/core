@@ -13,11 +13,22 @@ public class DoctorService {
     Doctor findById(String id) {
         return doctorRepository.findById(id).orElse(null);
     }
-    List<Doctor> findAll() {
+
+    List<Doctor> getAll() {
         return doctorRepository.findAll();
     }
 
-    public Doctor saveOrUpdateDoctor(Doctor doctor) {
+    public Doctor update(Doctor doctor) {
         return doctorRepository.save(doctor);
+    }
+
+    public Doctor create(Doctor doctor) {
+        return doctorRepository.insert(doctor);
+    }
+
+    public Doctor getById(String id) { return doctorRepository.findById(id).orElse(null); }
+
+    public void delete(String id) {
+        doctorRepository.deleteById(id);
     }
 }

@@ -16,10 +16,6 @@ public class Doctor extends Person {
         super();
     }
 
-    public Doctor(String id) {
-        super(id);
-    }
-
     public Double getConsultationFee() {
         return consultationFee;
     }

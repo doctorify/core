@@ -78,7 +78,6 @@ enum Gender {
 }
 
 public class Person {
-    @Id
     String id;
     String name;
     Date dateOfBirth;
@@ -87,7 +86,11 @@ public class Person {
 
     public Person() {}
 
-    public Person(String id) {
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
         this.id = id;
     }
 
