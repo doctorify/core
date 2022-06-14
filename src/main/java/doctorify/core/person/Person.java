@@ -79,13 +79,15 @@ enum Gender {
 
 public class Person {
     @Id
-    Long id;
+    String id;
     String name;
     Date dateOfBirth;
     Gender gender;
     Address address;
 
-    public Person(Long id) {
+    public Person() {}
+
+    public Person(String id) {
         this.id = id;
     }
 

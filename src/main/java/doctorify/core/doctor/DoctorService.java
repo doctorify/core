@@ -10,10 +10,14 @@ public class DoctorService {
     @Autowired
     private DoctorRepository doctorRepository;
 
-    Doctor findById(Long id) {
+    Doctor findById(String id) {
         return doctorRepository.findById(id).orElse(null);
     }
     List<Doctor> findAll() {
         return doctorRepository.findAll();
+    }
+
+    public Doctor saveOrUpdateDoctor(Doctor doctor) {
+        return doctorRepository.save(doctor);
     }
 }

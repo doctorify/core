@@ -1,10 +1,10 @@
 package doctorify.core.specialization;
 
 public class Specialization {
-    Long id;
+    String id;
     String name;
 
-    public Specialization(Long id) {
+    public Specialization(String id) {
         this.id = id;
     }
 

@@ -3,13 +3,13 @@ package doctorify.core.appointment;
 import java.util.Date;
 
 public class Appointment {
-    Long id;
+    String id;
     Long doctorId;
     Long patientId;
     Date startTime;
     Date endTime;
 
-    public Appointment(Long id) {
+    public Appointment(String id) {
         this.id = id;
     }
 

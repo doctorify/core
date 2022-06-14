@@ -12,7 +12,11 @@ public class Doctor extends Person {
     Date practiseStartDate;
     Double consultationFee;
 
-    public Doctor(Long id) {
+    public Doctor() {
+        super();
+    }
+
+    public Doctor(String id) {
         super(id);
     }
 

@@ -1,9 +1,7 @@
 package doctorify.core.doctor;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -16,5 +14,10 @@ public class DoctorRestController {
     @GetMapping(value = "")
     public List<Doctor> getAllDoctors() {
         return doctorService.findAll();
+    }
+
+    @PostMapping(value = "")
+    public Doctor saveOrUpdateDoctor(@RequestBody Doctor doctor) {
+        return doctorService.saveOrUpdateDoctor(doctor);
     }
 }
