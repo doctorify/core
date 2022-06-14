@@ -12,10 +12,6 @@ public class Doctor extends Person {
     Date practiseStartDate;
     Double consultationFee;
 
-    public Doctor() {
-        super();
-    }
-
     public Double getConsultationFee() {
         return consultationFee;
     }

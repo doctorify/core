@@ -1,7 +1,5 @@
 package doctorify.core.person;
 
-import org.springframework.data.annotation.Id;
-
 import java.util.Date;
 
 class Contact {
@@ -83,8 +81,6 @@ public class Person {
     Date dateOfBirth;
     Gender gender;
     Address address;
-
-    public Person() {}
 
     public String getId() {
         return id;
