@@ -6,9 +6,9 @@ import lombok.Setter;
 import java.util.Date;
 
 public class Appointment {
-  @Getter @Setter String id;
-  @Getter @Setter String doctorId;
-  @Getter @Setter String patientId;
-  @Getter @Setter Date startTime;
-  @Getter @Setter Date endTime;
+  @Getter @Setter private String id;
+  @Getter @Setter private String doctorId;
+  @Getter @Setter private String patientId;
+  @Getter @Setter private Date startTime;
+  @Getter @Setter private Date endTime;
 }

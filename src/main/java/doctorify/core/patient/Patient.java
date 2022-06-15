@@ -5,6 +5,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 public class Patient extends Person {
-  @Getter @Setter Double height;
-  @Getter @Setter Double weight;
+  @Getter @Setter private Double height;
+  @Getter @Setter private Double weight;
 }

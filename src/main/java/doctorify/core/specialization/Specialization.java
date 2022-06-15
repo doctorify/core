@@ -4,6 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 public class Specialization {
-  @Getter @Setter String id;
-  @Getter @Setter String name;
+  @Getter @Setter private String id;
+  @Getter @Setter private String name;
 }

@@ -10,7 +10,7 @@ import java.util.Date;
 
 @Document(collection = "doctors")
 public class Doctor extends Person {
-  @Getter @Setter List<String> specializationIds;
-  @Getter @Setter Date practiseStartDate;
-  @Getter @Setter Double consultationFee;
+  @Getter @Setter private List<String> specializationIds;
+  @Getter @Setter private Date practiseStartDate;
+  @Getter @Setter private Double consultationFee;
 }

@@ -6,16 +6,16 @@ import lombok.Setter;
 import java.util.Date;
 
 class Contact {
-  @Getter @Setter String email;
-  @Getter @Setter String phone;
+  @Getter @Setter private String email;
+  @Getter @Setter private String phone;
 }
 
 class Address {
-  @Getter @Setter String locality;
-  @Getter @Setter String city;
-  @Getter @Setter String state;
-  @Getter @Setter String country;
-  @Getter @Setter String zipCode;
+  @Getter @Setter private String locality;
+  @Getter @Setter private String city;
+  @Getter @Setter private String state;
+  @Getter @Setter private String country;
+  @Getter @Setter private String zipCode;
 }
 
 enum Gender {
@@ -24,10 +24,10 @@ enum Gender {
 }
 
 public class Person {
-  @Getter @Setter String id;
-  @Getter @Setter String name;
-  @Getter @Setter Date dateOfBirth;
-  @Getter @Setter Gender gender;
-  @Getter @Setter Contact contact;
-  @Getter @Setter Address address;
+  @Getter @Setter private String id;
+  @Getter @Setter private String name;
+  @Getter @Setter private Date dateOfBirth;
+  @Getter @Setter private Gender gender;
+  @Getter @Setter private Contact contact;
+  @Getter @Setter private Address address;
 }
