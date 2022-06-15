@@ -36,3 +36,4 @@ public class Doctor extends Person {
         this.specializationIds = specializationIds;
     }
 }
+

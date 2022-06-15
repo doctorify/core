@@ -16,3 +16,4 @@ public class Specialization {
         this.name = name;
     }
 }
+

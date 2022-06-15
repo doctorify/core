@@ -41,3 +41,4 @@ public class DoctorRestController {
         doctorService.delete(id);
     }
 }
+
