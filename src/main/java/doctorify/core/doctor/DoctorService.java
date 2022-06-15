@@ -13,6 +13,10 @@ public class DoctorService {
     return doctorRepository.findAll();
   }
 
+  /**
+   * @param doctor
+   * @return
+   */
   public Doctor update(Doctor doctor) {
     return doctorRepository.save(doctor);
   }
