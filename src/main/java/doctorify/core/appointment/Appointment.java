@@ -1,47 +1,14 @@
 package doctorify.core.appointment;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Date;
 
 public class Appointment {
-    String id;
-    String doctorId;
-    String patientId;
-    Date startTime;
-    Date endTime;
-
-    public Appointment(String id) {
-        this.id = id;
-    }
-
-    public Date getEndTime() {
-        return endTime;
-    }
-
-    public void setEndTime(Date endTime) {
-        this.endTime = endTime;
-    }
-
-    public Date getStartTime() {
-        return startTime;
-    }
-
-    public void setStartTime(Date startTime) {
-        this.startTime = startTime;
-    }
-
-    public String getPatientId() {
-        return patientId;
-    }
-
-    public void setPatientId(String patientId) {
-        this.patientId = patientId;
-    }
-
-    public String getDoctorId() {
-        return doctorId;
-    }
-
-    public void setDoctorId(String doctorId) {
-        this.doctorId = doctorId;
-    }
+  @Getter @Setter String id;
+  @Getter @Setter String doctorId;
+  @Getter @Setter String patientId;
+  @Getter @Setter Date startTime;
+  @Getter @Setter Date endTime;
 }
