@@ -12,7 +12,7 @@ on:
   pull_request:
     branches: [ "master" ]
 env:
-  JAVA_FILE_NAME: google_checks.xml
+  JAVA_FILE_NAME: /github/workspace/google_checks.xml
 jobs:
   run-lint:
     runs-on: ubuntu-latest
