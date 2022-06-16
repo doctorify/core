@@ -13,6 +13,7 @@ on:
     branches: [ "master" ]
 env:
   JAVA_FILE_NAME: google_checks.xml
+  VALIDATE_JAVA: false
 jobs:
   run-lint:
     runs-on: ubuntu-latest
