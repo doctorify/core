@@ -6,11 +6,11 @@ import lombok.Setter;
 import java.util.Date;
 
 public class Appointment {
-  /** Appointment Id. */
+  /** Appointment ID. */
   @Getter @Setter private String id;
-  /** Doctor Id. */
+  /** Doctor ID. */
   @Getter @Setter private String doctorId;
-  /** Patient Id. */
+  /** Patient ID. */
   @Getter @Setter private String patientId;
   /** Start time of the appointment. */
   @Getter @Setter private Date startTime;
