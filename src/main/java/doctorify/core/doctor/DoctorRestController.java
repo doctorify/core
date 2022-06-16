@@ -60,7 +60,7 @@ public class DoctorRestController {
    */
   @PutMapping(value = "/{id}")
   public Doctor update(@PathVariable final String id, @RequestBody final Doctor doctor) {
-    /** If we don't set the id here, then it assigns a new id. Is this the right place to do it ? */
+    /* If we don't set the id here, then it assigns a new id. Is this the right place to do it ? */
     doctor.setId(id);
     return doctorService.update(doctor);
   }
