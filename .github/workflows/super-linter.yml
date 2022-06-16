@@ -12,7 +12,6 @@ on:
   pull_request:
     branches: [ "master" ]
 env:
-  JAVA_LINTER_RULES: ${{ github.workspace }}
   JAVA_FILE_NAME: google_checks.xml
 jobs:
   run-lint:
