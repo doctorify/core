@@ -1,0 +1,22 @@
+version: '3.9'
+services:
+  doctorify-mongodb:
+    container_name: 'doctorify-mongodb'
+    image: mongo
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONG_INITDB_DATABASE: doctorify
+    volumes:
+      - ./mongodb-data:/data/db
+  doctorify-core:
+    container_name: 'doctorify-core'
+    image: openjdk:18
+    ports:
+      - '8080:8080'
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./:/home/doctorify/core

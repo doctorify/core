@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# Local store of mongodb data when running through docker
+mongodb-data/
