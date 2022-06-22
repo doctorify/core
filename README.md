@@ -35,6 +35,8 @@ cd /home/doctorify/core
 java -jar -Dspring.profiles.active=docker build/libs/core-<version>.jar
 ```
 
+Access the service at: http://localhost:8080
+
 [Spring Boot]: https://spring.io/projects/spring-boot
 
 [MongoDB]: https://www.mongodb.com/
