@@ -7,8 +7,8 @@ The core backend service for doctorify.
 - [Spring Boot]
 - [MongoDB]
 - [Docker]
-    - We use the standard [mongo](https://hub.docker.com/_/mongo) and [openjdk](https://hub.docker.com/_/openjdk) docker
-      images
+  - We use the standard [mongo](https://hub.docker.com/_/mongo) and [openjdk](https://hub.docker.com/_/openjdk) docker
+    images
 
 ## Development
 
